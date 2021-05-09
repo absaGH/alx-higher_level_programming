@@ -1,0 +1,1 @@
+This python project focuses on examining the concepts of Lambda, filter, reduce and map & how to apply them in appropriate scenarios.
