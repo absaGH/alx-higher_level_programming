@@ -7,7 +7,7 @@ class Square:
     
     Attributes:
         __size (int): size of a side of the square
-       __position (tuple): position of the square in x,y space
+        __position (tuple): position of the square in x,y space
     """
     def __init__(self, size=0, position=(0, 0)):
         """initializes the square
@@ -47,7 +47,7 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
-                self.__size = value
+            self.__size = value
 
     def my_print(self):
             """Print the square with the # character"""
@@ -84,4 +84,5 @@ class Square:
            type(value[0]) is not int or value[0] < 0 or \
            type(value[1]) is not int or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = value
+        else:
+            self.__position = value
