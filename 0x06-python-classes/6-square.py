@@ -43,6 +43,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
                 self.__size = value
+
     def my_print(self):
             """Print the square with the # character"""
             if self.__size == 0:
@@ -55,7 +56,7 @@ class Square:
                 [print("#", end="") for j in range(self.__size)]
                 print("")
 
-        @property
+    @property
     def position(self):
         """getter of __position
 
