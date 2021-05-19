@@ -1,0 +1,1 @@
+Exceptions are used to handle various types of errors encountered in programs in neatly. The tasks in this project explore exception in python.
