@@ -4,8 +4,12 @@
 
 
 class Node:
-    """Represent a node in a singly-linked list"""
-
+    """Represent a node in a singly-linked list
+    
+    Attributes:
+          __data (int): data stored inside the node
+          __next_node (Node): next node in the linked list
+    """
     def __init__(self, data, next_node=None):
         """Initialize a new Node
 
@@ -44,6 +48,7 @@ class Node:
     @next_node.setter
     def next_node(self, value):
         """set the next_node
+        
         Args:
             value (Node): next node in the linked list
         """
