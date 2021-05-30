@@ -67,6 +67,6 @@ class Rectangle:
                 rectStr.append("\n")
         return ("".join(rectStr))
 
-        def __repr__(self):
+    def __repr__(self):
         """returns a string representation of the rectangle to be recreated"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
