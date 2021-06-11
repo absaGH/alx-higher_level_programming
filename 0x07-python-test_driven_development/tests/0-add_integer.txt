@@ -121,3 +121,11 @@ And again with NaN numbers.
     >>> add_integer(2, float('nan'))
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
+
+Checking no args:
+
+::
+
+	  >>> add_integer()
+	   Traceback (most recent call last):
+	   TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
