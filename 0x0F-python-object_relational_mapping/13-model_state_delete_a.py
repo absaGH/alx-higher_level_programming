@@ -17,8 +17,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(eng)
     Session = sessionmaker(bind=eng)
     session = Session()
-    states = session.query(State).filter(State.name.like('%a%'))
+    states = session.query(State)
     for state in states:
+     if "a" in state.name:
         session.delete(state)
     session.commit()
     session.close()
