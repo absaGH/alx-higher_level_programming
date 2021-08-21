@@ -17,7 +17,7 @@ def find_peak(list_of_integers):
     peakelt = list_of_integers[midpt]
     if peakelt > list_of_integers[midpt - 1] and peakelt > list_of_integers[midpt + 1]:
         return peakelt
-    elif peakelt <= list_of_integers[midpt - 1]:
+    elif peakelt < list_of_integers[midpt - 1]:
         return find_peak(list_of_integers[:midpt])
     else:
         return find_peak(list_of_integers[midpt + 1:])
